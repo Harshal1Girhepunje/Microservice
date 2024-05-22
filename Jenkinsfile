@@ -10,7 +10,7 @@ pipeline {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh "docker build -t harshal1/cartservice:latest ."
                     }
-                        }
+                    }
                 }
             }   
         }
