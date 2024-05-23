@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build & Tag Docker Image') {
             steps {
-                script {
+                script { 
                     dir('src') {    
 
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
