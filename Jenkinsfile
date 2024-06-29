@@ -9,7 +9,7 @@ pipeline {
                         sh "docker build -t harshal1/emailservice:latest ."
                     }
                 }
-            }
+            } 
         }
         
         stage('Push Docker Image') {
