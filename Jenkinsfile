@@ -14,7 +14,7 @@ pipeline {
         
         stage('Push Docker Image') {
             steps {
-                script {
+                script { 
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
                         sh "docker push harshal1/productcatalogservice:latest "
                     }
